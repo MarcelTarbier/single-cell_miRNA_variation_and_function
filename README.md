@@ -82,3 +82,11 @@ setwd("~/Desktop/R_code/")
 load(file='gene_expression.RData')
 load(file='input_matrix.RData')
 ```
+In this example, we use all genes that start with "Rp" as our gene set of interest. We know that these genes have a different expression distribution than or complete gene set.
+```
+gene_set_of_interest = names(gene_expression)[substr(names(gene_expression),1,2)=='Rp']
+```
+We now apply our function to sample 500 genes randomly but in a way that the expression distribution of our sample is statistically not different from the expression distribution of our gene set of interest.
+```
+sampled_control = sample_constraint_to_one(all=gene_expression, subset=gene_set_of_interest, size=500, N=20)
+```
