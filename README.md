@@ -101,7 +101,7 @@ vioplot(log2(gene_expression+1),
         ylab='gene expression in log2(RPM+1)\n')
 ```
 <p float="left">
-  <img width="750" height="750" src="https://github.com/MarcelTarbier/single-cell_miRNA_variation_and_function/blob/main/GitHub_MT_example_1.png">
+  <img width="300" height="300" src="https://github.com/MarcelTarbier/single-cell_miRNA_variation_and_function/blob/main/GitHub_MT_example_1.png">
 </p>
 Finally, we can check the overlap or our random samples and the gene set of interest. Of our 124 genes of interest only a small fraction is also part of our random sample.
 ```
