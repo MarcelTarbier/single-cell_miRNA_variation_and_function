@@ -90,3 +90,19 @@ We now apply our function to sample 500 genes randomly but in a way that the exp
 ```
 sampled_control = sample_constraint_to_one(all=gene_expression, subset=gene_set_of_interest, size=500, N=20)
 ```
+Then we visualize the expression distribution of the whole data set, of our gene set of interest as well as of our sampled gene set.
+We can see that our gene set has higher gene expression than our complete data set and that our sampled gene set closely resembles the expression distribution of the gene set of interest.
+```
+vioplot(log2(gene_expression+1),
+        log2(gene_expression[gene_set_of_interest]+1),
+        log2(gene_expression[sampled_control]+1),
+        col='#fee090',
+        names=c('all data', 'subset', 'matched control'),
+        ylab='gene expression in log2(RPM+1)\n')
+```
+Finally, we can check the overlap or our random samples and the gene set of interest. Of our 124 genes of interest only a small fraction is also part of our random sample.
+```
+length(gene_set_of_interest)
+length(sampled_control)
+length(intersect(gene_set_of_interest, sampled_control))
+```
