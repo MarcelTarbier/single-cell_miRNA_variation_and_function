@@ -100,7 +100,7 @@ vioplot(log2(gene_expression+1),
         names=c('all data', 'subset', 'matched control'),
         ylab='gene expression in log2(RPM+1)\n')
 ```
-<p float="left">
+<p float="center">
   <img width="500" height="500" src="https://github.com/MarcelTarbier/single-cell_miRNA_variation_and_function/blob/main/GitHub_MT_example_1.png">
 </p>
 
