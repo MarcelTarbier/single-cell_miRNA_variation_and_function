@@ -6,9 +6,8 @@ This repository contains custom scripts related to the publication "Landscape of
 
 When performing enrichment analyses or comparing gene sets, it is important to consider potential biases in the data. For instance, it is quite likely that a gene set of interest is biases towards highly expressed genes in the model system, since lowly expressed genes may simply not be detected in the essay or have high levels of technical noise, overshadowing the effects one aims to observe. It is therefore useful to compare a set of interest with a random control set that shares certain features, for instance the same gene expression distribution.
 
+This function samples a random set of genes that are statistically not different for a given metric (e.g., gene expression) from a given set of genes of interest.
 ```
-# This function samples a random set of genes that are statistically not different for a given metric (e.g., gene expression) from a given set of genes of interest.
-#
 # 'all' is a list of all genes and the measurement to balance for, list names are gene names (or gene IDs)
 # 'subset' is a list of gene names (or IDs)
 # 'size' is the number of genes that are to be samples
