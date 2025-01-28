@@ -111,5 +111,5 @@ length(sampled_control)
 length(intersect(gene_set_of_interest, sampled_control))
 ```
 
-## Expression matched controls:
+## miRNA target selection:
 WORK IN PROGRESS
