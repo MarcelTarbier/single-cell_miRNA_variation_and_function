@@ -78,7 +78,6 @@ sample_constraint_to_many <- function(all, subset, size, N=5)
 ```
 Let's load some data and try them! So we set your working directory and load the example data.
 ```
-setwd("~/Desktop/R_code/")
 load(file='gene_expression.RData')
 load(file='input_matrix.RData')
 ```
@@ -128,3 +127,6 @@ fam_data_for_barplot = rbind(miR_fam_data_norm[top_10_miRNA_fams,order_of_cells]
 colors = c(rev(brewer.pal(n = 10, name = "Spectral")), 'lightgrey')
 barplot(as.matrix(fam_data_for_barplot), horiz=T, col=colors)
 ```
+<p float="center">
+  <img width="500" height="500" src="https://github.com/MarcelTarbier/single-cell_miRNA_variation_and_function/blob/main/images/GitHub_MT_example_2.png">
+</p>
