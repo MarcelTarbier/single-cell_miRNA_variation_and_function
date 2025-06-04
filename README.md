@@ -111,5 +111,20 @@ length(sampled_control)
 length(intersect(gene_set_of_interest, sampled_control))
 ```
 
-## miRNA target selection:
-WORK IN PROGRESS
+## miRNA complexity plot (Fig. 1C):
+
+```
+library("RColorBrewer")
+load('miR_fam_data.RData')
+
+miR_fam_data_norm = t(t(miR_fam_data)/colSums(miR_fam_data))
+
+top_10_miRNA_fams = names(sort(rowMeans(miR_fam_data_norm), decreasing=T)[1:10])
+other_miRNA_fams = setdiff(rownames(miR_fam_data_norm), top_10_miRNA_fams)
+
+order_of_cells = names(sort(colSums(miR_fam_data_norm[top_10_miRNA_fams,]), decreasing=T))
+fam_data_for_barplot = rbind(miR_fam_data_norm[top_10_miRNA_fams,order_of_cells], colSums(miR_fam_data_norm[other_miRNA_fams,order_of_cells]))
+
+colors = c(rev(brewer.pal(n = 10, name = "Spectral")), 'lightgrey')
+barplot(as.matrix(fam_data_for_barplot), horiz=T, col=colors)
+```
