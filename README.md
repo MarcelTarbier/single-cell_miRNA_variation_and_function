@@ -130,3 +130,18 @@ barplot(as.matrix(fam_data_for_barplot), horiz=T, col=colors)
 <p float="center">
   <img width="500" height="500" src="https://github.com/MarcelTarbier/single-cell_miRNA_variation_and_function/blob/main/images/GitHub_MT_example_2.png">
 </p>
+
+## Quantification tools:
+
+In this folder you can find two custom scripts that were used for the preprocessing: exonize and quantify.
+
+Their use is described in the Methods section of the paper.
+
+Example commands:
+```
+exonize_template.pl -m map.sam -a exons.bed -C -S -e -u -q -I a36 -o outfile.csv
+```
+```
+quantify2 -r config_file -C -y tag_for_run -t Mouse -A -U -P -T 4 -d -S -N -F -R -B -g 0  -p hairpin_mmu_clean.fa  -m mmu_1915_mature_miRNAs.fa
+```
+
