@@ -133,8 +133,8 @@ barplot(as.matrix(fam_data_for_barplot), horiz=T, col=colors)
 
 ## Quantification tools:
 
-In this folder you can find two custom scripts that were used for the preprocessing: exonize and quantify (by Sebastian Mackowiak).
-Their use is described in detail in the Methods section of the paper.
+In the folder "quantification tools" you can find two custom scripts that were used for the preprocessing: exonize and quantify (by Sebastian Mackowiak).
+Their use is described in detail in the Methods section of the paper (bioRxiv: https://www.biorxiv.org/content/10.1101/2024.03.24.586475v1).
 
 Example commands:
 ```
