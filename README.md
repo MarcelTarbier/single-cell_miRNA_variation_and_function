@@ -1,6 +1,6 @@
 # Companion scripts for "Landscape of microRNA and target expression variation and covariation in single mouse embryonic stem cells"
 
-This repository contains custom scripts related to the publication "Landscape of microRNA and target expression variation and covariation in single mouse embryonic stem cells". It also features some pre-processed data tables containing aggregated information about the abundance and variation of miRNAs and their mRNA targets in mESCs, as well as example data for the functions presented.
+This repository contains custom scripts related to the publication "Landscape of microRNA and target expression variation and covariation in single mouse embryonic stem cells". It also features some pre-processed data tables.
 
 ## Expression matched controls:
 
