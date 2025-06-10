@@ -1,6 +1,6 @@
 # Companion scripts for "Landscape of microRNA and target expression variation and covariation in single mouse embryonic stem cells"
 
-This repository contains custom scripts related to the publication "Landscape of microRNA and target expression variation and covariation in single mouse embryonic stem cells". It also features some pre-processed data tables. The code below is R, the quantification tools are perl.
+This repository contains custom scripts related to the publication "Landscape of microRNA and target expression variation and covariation in single mouse embryonic stem cells". It also features some pre-processed data tables. The code below is R, the quantification tools are Perl.
 
 ## Expression matched controls:
 
